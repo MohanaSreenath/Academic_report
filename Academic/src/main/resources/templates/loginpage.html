@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
@@ -7,10 +7,18 @@
 </head>
 <body>
 <div class="box">
-    <h1>Login Page 🧠</h1>
-    <input type="text" placeholder="Username"><br><br>
-    <input type="password" placeholder="Password"><br><br>
-    <button>Login</button><br><br>
+    <h1>login Form</h1>
+    <form th:action="@{/login}" method="post">
+        <label>
+            <input type="email" name="email" placeholder="Enter email" />
+        </label>
+        <br/>
+        <label>
+            <input type="password" name="password" placeholder="Enter password" />
+        </label>
+        <br/>
+        <button type="submit">LogIn</button>
+    </form>
 
     <!-- Register redirect button -->
     <form action="/register" method="get">

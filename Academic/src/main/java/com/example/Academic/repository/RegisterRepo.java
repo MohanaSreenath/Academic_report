@@ -1,8 +1,10 @@
 package com.example.Academic.repository;
-import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.example.Academic.entity.registerEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
 
 public interface RegisterRepo extends JpaRepository<registerEntity, Long> {
-    registerEntity findAllByEmailEqualsIgnoreCase(String email);
+    Optional<registerEntity> findByEmailIgnoreCase(String email);
 }
-
