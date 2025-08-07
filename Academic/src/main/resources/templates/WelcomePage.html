@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<nav class="navbar">
+    <div class="logo">Academic AI</div>
+    <div class="buttons">
+        <a th:href="@{/welcome}">Home</a>
+        <a th:href="@{/reports}">Reports</a>
+        <a th:href="@{/logout}">Logout</a>
+    </div>
+</nav>
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
 </head>
-<body>
-Hii Welcoem to Academic AI I here to assist you in your academics
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-lorem lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua.
+<link rel="stylesheet" href="/css/WelcomePage.css">
+<h1>Welcome {{user_name}}</h1>
+<body><b>
+This project helps you to understand how your academic going.<br>
+we can even make deep analysis of your studies.</b><br>
 </body>
 </html>
