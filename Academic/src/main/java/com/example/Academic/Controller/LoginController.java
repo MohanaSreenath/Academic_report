@@ -29,6 +29,3 @@ public class LoginController {
         return flag? "WelcomePage" : "loginpage";
     }
 }
-
-
-
