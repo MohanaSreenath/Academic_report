@@ -6,23 +6,21 @@
     <link rel="stylesheet" href="/css/loginpagestyle.css">
 </head>
 <body>
-<div class="box">
-    <h1>login Form</h1>
+<div>
+    <h1>Login Form</h1>
     <form th:action="@{/login}" method="post">
         <label>
             <input type="email" name="email" placeholder="Enter email" />
         </label>
-        <br/>
         <label>
             <input type="password" name="password" placeholder="Enter password" />
         </label>
-        <br/>
-        <button type="submit">LogIn</button>
+        <button type="submit">Log In</button>
     </form>
 
     <!-- Register redirect button -->
     <form action="/register" method="get">
-        <button type="submit">Register</button>
+        <button type="submit">Create New Account</button>
     </form>
 </div>
 </body>
